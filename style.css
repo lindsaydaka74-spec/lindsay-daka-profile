@@ -1,0 +1,53 @@
+img {
+  max-width: 150px;
+  height: 150px;
+}
+header {
+  background-color: lightblue;
+  padding: 20px;
+  
+}
+footer {
+  background-color: lightgray;
+  padding: 10px;
+  
+}
+.aboutme {
+  background-color: lightyellow;
+  padding: 20px;
+  
+}
+.contact {
+  background-color: lightgreen;
+  padding: 20px;
+  
+}
+.skills {
+  background-color: lightcoral;
+  padding: 20px;
+  
+}
+main section {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    flex-wrap: wrap;
+    border-radius: 5px;
+}
+main{
+     display:flex;
+     flex-direction: row;
+}
+
+
+
+
+@media (max-width: 480px) {
+  main {
+    flex-direction: column;
+  }
+  main section {
+    width: 50%;
+  }
+}
+
