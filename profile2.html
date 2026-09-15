@@ -9,7 +9,7 @@
 <body>
     <header>
 
-        <img src="C:\Users\LINDSAY\OneDrive\Pictures\Screenshots\Screenshot 2024-05-12 134045.png" alt="Profile Image">
+        <img src="profile.jpg" alt="Lindsay Daka smiling, headshot photo">
         <h1>Lindsay Daka</h1>
         <p>Software Engineer</p>
         <nav>
@@ -24,20 +24,67 @@
         <section class="aboutme">
             <h2>About Me</h2>
             <p>Hello! I'm Lindsay, a passionate software engineer with experience in web development and programming.</p>
-        </section>
-        <section class="contact">
-            <h2>Contact</h2>
-            <p>Email: lindsaydaka@gmail.com | Phone: 0718971433</p>
+             <aside>
+           <h3>Quick Facts</h3>
+            <ul>
+                <li>Currently studying Software Engineering at Africa University</li>
+                <li>Interested in UI design and web technologies</li>
+                <li>Enjoy solving coding puzzles and building small projects</li>
+                <li>Volunteer tutor for first-year programming students</li>
+            </ul> 
+
+  </aside>
         </section>
         <section class="skills">
             <h2>Skills</h2>
+            <h3>Programming Languages</h3>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>Python</li>
             </ul>
+            <article>
+              <h3>Recent Project: Student Portfolio Website</h3>
+                    <p>
+                        I recently built a responsive portfolio site using HTML5, CSS3, and JavaScript. 
+                        The project helped me practice semantic markup, accessibility standards, and 
+                        version control with GitHub. It also gave me experience in refining AI-generated 
+                        content to match my own style.
+                    </p>
+            </article>
+        </section>
+     
+        <section class="contact">
+            <h2>Contact</h2>
+            
+            <p>Email: lindsaydaka@gmail.com | Phone: 0718971433</p>
+            <h3>send a message</h3>
+         <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+               <input type="text" id="name" required>
+            </div>
 
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" pattern="[0-9]{10}" required>
+    </div>
+
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" minlength="10" required></textarea>
+    </div>
+
+    <button type="submit">Send</button>
+  </form>
+        </section>
+       
     </main>
     <footer>
         <p>&copy; 2026 My Profile.</p>

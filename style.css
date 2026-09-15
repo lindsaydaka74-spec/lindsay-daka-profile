@@ -13,7 +13,7 @@ footer {
   
 }
 .aboutme {
-  background-color: lightyellow;
+  background-color: lightpink;
   padding: 20px;
   
 }
@@ -21,6 +21,37 @@ footer {
   background-color: lightgreen;
   padding: 20px;
   
+}
+form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .skills {
   background-color: lightcoral;
@@ -38,8 +69,6 @@ main{
      display:flex;
      flex-direction: row;
 }
-
-
 
 
 @media (max-width: 480px) {
