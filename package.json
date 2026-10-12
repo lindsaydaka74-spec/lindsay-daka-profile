@@ -1,0 +1,25 @@
+{
+  "name": "webtechrep",
+  "version": "1.0.0",
+  "description": "A semantic HTML5 profile and mini‑portfolio page showcasing my skills, contact form, and accessibility features for Web Technologies assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindsaydaka74-spec/lindsay-daka-profile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lindsaydaka74-spec/lindsay-daka-profile/issues"
+  },
+  "homepage": "https://github.com/lindsaydaka74-spec/lindsay-daka-profile#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}

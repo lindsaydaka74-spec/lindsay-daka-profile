@@ -1,82 +1,311 @@
+
+/*
+Lindsay Daka — Profile Page Styles
+Assignment 2: Responsive CSS and Tailwind
+Mobile-first responsive design
+*/
+
+/*  PART A: FOUNDATIONS  */
+
+:root {
+  
+  --color-ink: #1b2a2f;
+  --color-paper: #f4f7f8;
+  --color-surface: #ffffff;
+  --color-brand: #0f3d3e;
+  --color-accent: #0b6e6e;
+  --color-line: #c9d6d8;
+
+ 
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2.5rem;
+
+
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-heading: Georgia, "Times New Roman", serif;
+
+  font-family: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-ink);
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+
+main {
+  width: 100%;
+  max-width: 68rem;
+  margin-inline: auto;
+  padding: var(--space-l) var(--space-m) var(--space-xl);
+}
+
+/* NAVIGATION: FLEXBOX  */
+
+/* Assumes your navigation uses a list inside nav. */
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-m);
+
+  margin: 0;
+  padding: var(--space-m);
+  list-style: none;
+}
+
+nav a {
+  display: inline-block;
+  padding: var(--space-s);
+  color: var(--color-brand);
+  font-weight: 600;
+}
+
 img {
-  max-width: 150px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-image {
+  width: 150px;
+  max-width: 100%;
   height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: 0 auto var(--space-m);
 }
-header {
-  background-color: lightblue;
-  padding: 20px;
-  
+
+
+.profile img {
+  width: 150px;
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: 0 auto var(--space-m);
 }
-footer {
-  background-color: lightgray;
-  padding: 10px;
-  
-}
-.aboutme {
-  background-color: lightpink;
-  padding: 20px;
-  
-}
+
+.aboutme,
+.skills,
 .contact {
-  background-color: lightgreen;
-  padding: 20px;
-  
-}
-form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
+  padding-block: var(--space-l);
+  border-top: 2px solid var(--color-line);
+  margin-bottom: var(--space-l);
 }
 
-.form-group label {
-    margin-bottom: 5px;
-    font-weight: bold;
+.aboutme h2,
+.skills h2,
+.contact h2 {
+  font-family: var(--font-heading);
+  font-size: 1.625rem;
+  color: var(--color-brand);
+  margin-bottom: var(--space-m);
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #999;
-    border-radius: 5px;
+
+.aboutme h3,
+.skills h3,
+.contact h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-brand);
+  margin-bottom: var(--space-s);
 }
 
-.form-group textarea {
-    height: 120px;
-    resize: vertical;
+.aboutme p,
+.skills p,
+.contact p {
+  margin-bottom: var(--space-m);
+  max-width: 65ch;
+  overflow-wrap: anywhere;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: var(--space-l);
+}
+
+
+.skills-grid article,
+.skills-grid .card,
+.project-card {
+  min-width: 0;
+  padding: var(--space-m);
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 0.5rem;
+  overflow-wrap: anywhere;
+}
+
+.contact {
+  overflow-wrap: anywhere;
+}
+
+.contact form {
+  width: 100%;
+  max-width: 38rem;
+}
+
+.contact input,
+.contact textarea,
+.contact select,
+.contact button {
+  max-width: 100%;
+  font: inherit;
+}
+
+.contact input,
+.contact textarea,
+.contact select {
+  width: 100%;
+  padding: var(--space-s);
+  margin-bottom: var(--space-m);
+  border: 1px solid var(--color-line);
+  border-radius: 0.25rem;
+}
+
+.contact textarea {
+  min-height: 8rem;
+  resize: vertical;
 }
 
 .contact button {
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.skills {
-  background-color: lightcoral;
-  padding: 20px;
-  
-}
-main section {
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-    flex-wrap: wrap;
-    border-radius: 5px;
-}
-main{
-     display:flex;
-     flex-direction: row;
+  padding: var(--space-s) var(--space-l);
+  border: none;
+  border-radius: 0.25rem;
+  background: var(--color-brand);
+  color: var(--color-surface);
+  cursor: pointer;
 }
 
+.contact button:hover {
+  background: var(--color-accent);
+}
 
-@media (max-width: 480px) {
+footer {
+  background: var(--color-brand);
+  color: var(--color-surface);
+  text-align: center;
+  padding: var(--space-l) var(--space-m);
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 48rem) {
   main {
-    flex-direction: column;
+    padding-inline: var(--space-l);
   }
-  main section {
-    width: 50%;
+
+  .aboutme,
+  .skills,
+  .contact {
+    padding-block: var(--space-xl);
+  }
+
+  /* Slightly larger profile image on tablet */
+
+  .profile-image,
+  .profile img {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+/* Desktop: approximately 1024px and above */
+
+@media (min-width: 64rem) {
+  main {
+    padding-inline: var(--space-xl);
+  }
+
+  .aboutme h2,
+  .skills h2,
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  /* Desktop profile image */
+
+  .profile-image,
+  .profile img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Small screens: approximately 375px */
+
+@media (max-width: 24rem) {
+  main {
+    padding-inline: var(--space-s);
+  }
+
+  nav ul {
+    gap: var(--space-s);
+    padding-inline: 0;
+  }
+
+  .profile-image,
+  .profile img {
+    width: 120px;
+    height: 120px;
   }
 }
 

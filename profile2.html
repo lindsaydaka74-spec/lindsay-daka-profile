@@ -1,94 +1,260 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header id="home">
-        <img src="profile.jpg" alt="Lindsay Daka smiling, headshot photo">
-        <h1>Lindsay Daka</h1>
-        <p>Software Engineer</p>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        
-           <section id="about" class="aboutme">
-            <h2>About Me</h2>
-            <p>Hello! I’m Lindsay—software engineer in training. I’ve built and tested web projects where I learned by doing: structuring pages properly, refining code, and making sure the UI works well for real users. Lately, my focus has been on writing clean, accessible HTML and understanding how to design with intention instead of just styling. I’m also learning how AI fits into the process: using it to get ideas faster, then improving the output myself to match my project goals and standards.</p>
-             <aside>
-           <h3>Quick Facts</h3>
-            <ul>
-                <li>Currently studying Software Engineering at Africa University</li>
-                <li>Interested in UI design and web technologies</li>
-                <li>Enjoy solving coding puzzles and building small projects</li>
-                <li>Volunteer tutor for first-year programming students</li>
-            </ul> 
 
-  </aside>
-        </section>
-        <section id="skills" class="skills">
-            <h2>Skills</h2>
-            <h3>Programming Languages</h3>
+
+<meta name="description" content="Lindsay Daka's personal profile and software engineering portfolio.">
+
+<title>Lindsay Daka | Software Engineering Portfolio</title>
+
+<!-- Tailwind CSS generated locally -->
+<link rel="stylesheet" href="tailwind.css">
+
+<!-- Custom responsive CSS -->
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+<header id="home" class="site-header text-center px-4 py-8 md:px-8">
+
+<img src="profile.jpg" alt="Lindsay Daka smiling" class="profile-image">
+
+    <h1>Lindsay Daka</h1>
+
+    <p class="profile-subtitle">Software Engineer in Training</p>
+
+    <p class="header-description">
+        Building skills, creating solutions, and learning through technology.
+    </p>
+
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<!MAIN CONTENT >
+<main>
+
+    <!ABOUT ME SECTION -->
+    <section id="about" class="aboutme content-card md:p-8">
+
+        <h2>About Me</h2>
+
+        <p>
+            Hello! I'm Lindsay, a software engineer in training. I've built
+            and tested web projects where I learned by doing: structuring
+            pages properly, refining code, and making sure the user interface
+            works well for real users.
+        </p>
+
+        <p>
+            Lately, my focus has been on writing clean, accessible HTML and
+            understanding how to design with intention instead of just
+            styling. I'm also learning how AI fits into the process: using
+            it to get ideas faster, then improving the output myself to
+            match my project goals and standards.
+        </p>
+
+        <aside class="quick-facts">
+            <h3>Quick Facts</h3>
+
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
+                <li>
+                    Currently studying Software Engineering at Africa University
+                </li>
+                <li>
+                    Interested in UI design and web technologies
+                </li>
+                <li>
+                    Enjoy solving coding puzzles and building small projects
+                </li>
+                <li>
+                    Volunteer tutor for first-year programming students
+                </li>
             </ul>
-            <article>
-              <h3>Recent Project: Student Portfolio Website</h3>
-                    <p>
-                        I recently built a responsive portfolio site using HTML5, CSS3, and JavaScript. 
-                        The project helped me practice semantic markup, accessibility standards, and 
-                        version control with GitHub. It also gave me experience in refining AI-generated 
-                        content to match my own style.
-                    </p>
+        </aside>
+
+    </section>
+
+
+    <!-- SKILLS AND PROJECTS SECTION -->
+    <section id="skills" class="skills content-card">
+
+        <h2>My Skills &amp; Projects</h2>
+
+        <div class="skills-grid">
+
+            <!-- PROGRAMMING SKILLS -->
+            <article class="skill-card">
+
+                <h3>Programming Languages</h3>
+
+                <p>
+                    These are some of the technologies I am learning
+                    and using in my software engineering journey.
+                </p>
+
+                <ul class="skill-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                </ul>
+
             </article>
-        </section>
-     
-        <section id="contact" class="contact">
-            <h2>Contact</h2>
-            
-            <p>Email: lindsaydaka@gmail.com | Phone: 0718971433</p>
-            <h3>send a message</h3>
-         <form>
+
+
+            <!-- RECENT PROJECT -->
+            <article class="project-card">
+
+                <h3>Recent Project</h3>
+
+                <h4>Student Portfolio Website</h4>
+
+                <p>
+                    I recently built a portfolio website using HTML5,
+                    CSS3, and JavaScript. The project helped me practise
+                    semantic markup, accessibility standards, and version
+                    control with GitHub.
+                </p>
+
+                <p>
+                    It also gave me experience in refining AI-generated
+                    content to match my own style and project requirements.
+                </p>
+
+                <span class="project-tag">Web Development</span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact content-card md:p-8">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            Have a question or want to discuss technology and projects?
+            Feel free to get in touch.
+        </p>
+
+        <div class="contact-details">
+
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:lindsaydaka@gmail.com">
+                    lindsaydaka@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                <a href="tel:0718971433">0718971433</a>
+            </p>
+
+        </div>
+
+        <h3>Send Me a Message</h3>
+
+        <form action="#" method="get">
+
             <div class="form-group">
-                <label for="name">Name:</label>
-               <input type="text" id="name" required>
+                <label for="name">Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    autocomplete="name"
+                    required
+                >
             </div>
 
-    <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
-    </div>
 
-    <div class="form-group">
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" pattern="[0-9]{10}" required>
-    </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
 
-    <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" minlength="10" required></textarea>
-    </div>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email"
+                    required
+                >
+            </div>
 
-    <button type="submit">Send</button>
-  </form>
-        </section>
-       
-    </main>
-    <footer>
-        <p>&copy; 2026 My Profile.</p>
-    </footer>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    pattern="[0-9]{10}"
+                    placeholder="Enter your 10-digit phone number"
+                    autocomplete="tel"
+                    required
+                >
+            </div>
+
+
+            <div class="form-group">
+                <label for="message">Message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    minlength="10"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+            </div>
+
+
+            <button
+                type="submit"
+                class="submit-button bg-teal-800 hover:bg-teal-700 text-white font-semibold rounded-lg px-6 py-3 transition-colors"
+            >
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer text-center px-4 py-6">
+
+    <p>&copy; 2026 Lindsay Daka. All rights reserved.</p>
+
+    <a href="#home">Back to top ↑</a>
+
+</footer>
+```
+
 </body>
 </html>
