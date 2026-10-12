@@ -46,10 +46,7 @@
 </header>
 
 
-<!MAIN CONTENT >
 <main>
-
-    <!ABOUT ME SECTION -->
     <section id="about" class="aboutme content-card md:p-8">
 
         <h2>About Me</h2>
@@ -91,7 +88,7 @@
     </section>
 
 
-    <!-- SKILLS AND PROJECTS SECTION -->
+
     <section id="skills" class="skills content-card">
 
         <h2>My Skills &amp; Projects</h2>
@@ -118,7 +115,7 @@
             </article>
 
 
-            <!-- RECENT PROJECT -->
+            
             <article class="project-card">
 
                 <h3>Recent Project</h3>
@@ -146,67 +143,81 @@
     </section>
 
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact content-card md:p-8">
 
-        <h2>Let's Connect</h2>
+<section id="contact" class="contact content-card px-4 py-6 md:p-8">
 
-        <p>
-            Have a question or want to discuss technology and projects?
-            Feel free to get in touch.
-        </p>
 
-        <div class="contact-details">
+<h2>Let's Connect</h2>
 
-            <p>
-                <strong>Email:</strong>
+<p class="contact-intro">
+    Have a question or want to discuss technology and projects?
+    Feel free to get in touch.
+</p>
+
+<div class="contact-layout">
+
+    <!-- CONTACT INFORMATION CARD -->
+    <div class="contact-info contact-box">
+
+        <h3>Contact Information</h3>
+
+        <p>You can reach me through the following details.</p>
+
+        <div class="contact-item">
+            <span class="contact-icon">✉</span>
+            <div>
+                <h4>Email Address</h4>
                 <a href="mailto:lindsaydaka@gmail.com">
                     lindsaydaka@gmail.com
                 </a>
-            </p>
-
-            <p>
-                <strong>Phone:</strong>
-                <a href="tel:0718971433">0718971433</a>
-            </p>
-
+            </div>
         </div>
 
+        <div class="contact-item">
+            <span class="contact-icon">☎</span>
+            <div>
+                <h4>Phone Number</h4>
+                <a href="tel:0718971433">0718971433</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MESSAGE FORM CARD -->
+    <div class="contact-form-card contact-box">
+
         <h3>Send Me a Message</h3>
+
+        <p>Fill in the form below to get in touch.</p>
 
         <form action="#" method="get">
 
             <div class="form-group">
-                <label for="name">Name</label>
-
+                <label for="name">Full Name</label>
                 <input
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Enter your name"
+                    placeholder="Enter your full name"
                     autocomplete="name"
                     required
                 >
             </div>
 
-
             <div class="form-group">
                 <label for="email">Email Address</label>
-
                 <input
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="Enter your email"
+                    placeholder="Enter your email address"
                     autocomplete="email"
                     required
                 >
             </div>
 
-
             <div class="form-group">
                 <label for="phone">Phone Number</label>
-
                 <input
                     type="tel"
                     id="phone"
@@ -218,10 +229,8 @@
                 >
             </div>
 
-
             <div class="form-group">
-                <label for="message">Message</label>
-
+                <label for="message">Your Message</label>
                 <textarea
                     id="message"
                     name="message"
@@ -231,7 +240,6 @@
                 ></textarea>
             </div>
 
-
             <button
                 type="submit"
                 class="submit-button bg-teal-800 hover:bg-teal-700 text-white font-semibold rounded-lg px-6 py-3 transition-colors"
@@ -240,6 +248,13 @@
             </button>
 
         </form>
+
+    </div>
+
+</div>
+
+
+</section>
 
     </section>
 
